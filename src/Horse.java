@@ -1,19 +1,19 @@
-public class Main {
-    static int size = 8;
+public class Horse {
+    static int size = 6;
     static int[][] desk = new int[size][size];
     int[][] step = {{1,-2}, {2,-1}, {2,1}, {1,2}, {-1,2}, {-2,1}, {-2, -1}, {-1,-2}};
     static int n;
 
     public static void main(String [] args){
-        Main main = new Main();
+        Horse horse = new Horse();
         n = 0;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 desk[i][j] = 0;
             }
         }
-        main.setHorse(1,1);
-        main.print();
+        horse.setHorse(1,1);
+        horse.print();
     }
 
     private void print(){
